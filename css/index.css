@@ -1,0 +1,138 @@
+:root {
+  --text-dark-blue: hsl(238, 29%, 16%);
+  --text-red: hsl(14, 88%, 65%);
+  --text-very-dark-gray-blue: hsl(237, 12%, 33%);
+  --text-dark-gray-blue: hsl(240, 6%, 50%);
+  --bg-soft-violet: hsl(273, 75%, 66%);
+  --bg-soft-blue: hsl(240, 73%, 65%);
+  --dividers-light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+.visibility-hidden:not(:focus):not(:active) {
+  display: none;
+}
+
+.bold-font {
+  font-weight: var(--fw-bold);
+  color: var(--text-dark-blue);
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+:root {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75rem;
+  --fw-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg, picture {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background: linear-gradient(var(--bg-soft-violet), var(--bg-soft-blue));
+}
+
+#faq {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1.5rem;
+  position: relative;
+}
+#faq > :nth-child(1) {
+  position: absolute;
+  top: -8rem;
+  left: 4.375rem;
+  width: 17.5rem;
+}
+#faq > :nth-child(2) {
+  position: absolute;
+  top: 0.75rem;
+  left: 4.375rem;
+  width: 17.5rem;
+}
+#faq #title {
+  color: var(--text-dark-blue);
+  font-weight: var(--fw-bold);
+  font-size: 2.625rem;
+}
+#faq #questions .q_a {
+  border-bottom: 1px solid var(--dividers-light-grayish-blue);
+}
+#faq #questions .q_a .question {
+  font-size: 1rem;
+  transition: ease-in-out 0.2s;
+}
+#faq #questions .q_a img {
+  transition: ease-in-out 0.2s;
+}
+#faq #questions .q_a img:hover, #faq #questions .q_a img:focus {
+  cursor: pointer;
+}
+#faq #questions .q_a .question:hover, #faq #questions .q_a .question:focus {
+  color: var(--text-red);
+  cursor: pointer;
+}
+#faq #questions .q_a .answer {
+  transition: ease-in-out 0.2s;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  place-content: center;
+  padding-inline: 2.25rem;
+}
+
+article {
+  padding: 2rem;
+}
+article .wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  place-content: center;
+  margin-top: 6.75rem;
+  margin-bottom: 1.5rem;
+}
+article header {
+  align-self: end;
+  justify-self: center;
+  padding-block: 1.5rem;
+}
+article section {
+  display: grid;
+}
+article section div {
+  padding-block: 1rem;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 90% 10%;
+}
+article section div img {
+  align-self: center;
+  justify-self: end;
+}
+
+/*# sourceMappingURL=index.css.map */

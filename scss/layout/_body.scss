@@ -1,0 +1,10 @@
+@use '../utilities/' as *;
+
+// Body layout
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    place-content: center;
+    padding-inline: rem(36);
+}

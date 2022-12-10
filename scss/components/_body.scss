@@ -1,0 +1,7 @@
+@use '../base/' as *;
+
+// Body styling
+
+body {
+    background: linear-gradient(var(--bg-soft-violet), var(--bg-soft-blue));
+}

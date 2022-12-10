@@ -1,0 +1,40 @@
+@use '../utilities/' as *;
+
+// Article layout
+
+article {
+    
+    // min-width: 100%;
+    // row-gap: rem(36);
+    padding: rem(32);
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        place-content: center;
+        margin-top: rem(108);
+        margin-bottom: rem(24);
+    }
+
+    header {
+        align-self: end;
+        justify-self: center;
+        padding-block: rem(24);
+    }
+
+    section {
+        display: grid;
+
+        div {
+            padding-block: rem(16);
+            display: grid;
+            row-gap: rem(16);
+            grid-template-columns: 90% 10%;
+
+            img {
+                align-self: center;
+                justify-self: end;
+            }
+        }
+    }
+}

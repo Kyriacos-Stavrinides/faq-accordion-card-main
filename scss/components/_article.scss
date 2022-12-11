@@ -3,58 +3,21 @@
 // FAQ styling
 
 #faq {
-    background-color: hsl(0, 0, 100%);
+    background-color: hsl(0 0% 100%);
     border-radius: rem(24);
-    position: relative;
 
-    >:nth-child(1) {
-        position: absolute;
-        top: rem(-128);
-        left: rem(70);
-        width: rem(280);
+    display: grid;
+    place-content: center;
+    grid-template-columns: 85%;
+    padding-block: rem(24);
+
+    &__imgs {
+        display: none;
     }
 
-    >:nth-child(2) {
-        position: absolute;
-        top: rem(12);
-        left: rem(70);
-        width: rem(280);
+    img:nth-child(1) {
+        display: none;
     }
 
-    #title {
-        color: var(--text-dark-blue);
-        font-weight: var(--fw-bold);
-        font-size: rem(42);
-    }
-
-    #questions {
-        
-        .q_a {
-            border-bottom: 1px solid var(--dividers-light-grayish-blue);
-
-            .question {
-                font-size: rem(16);
-                transition: ease-in-out .2s;
-            }
-
-            img {
-                transition: ease-in-out .2s;
-            }
-
-            img:hover, img:focus {
-                cursor: pointer;
-            }
-
-            .question:hover, .question:focus {
-                color: var(--text-red);
-                cursor: pointer;
-            }
-
-            .answer {
-                transition: ease-in-out .2s;
-            }
-        }
-
-    }
-
+    
 }

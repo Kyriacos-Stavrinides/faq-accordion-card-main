@@ -1,0 +1,9 @@
+@use '../utilities/' as *;
+
+$mdBreakpoint: em(650);
+
+@mixin mdBreakpoint {
+    @media only screen and (min-width: $mdBreakpoint) {
+        @content;
+    }
+}

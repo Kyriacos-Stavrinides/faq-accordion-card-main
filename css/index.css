@@ -54,85 +54,24 @@ p, h1, h2 {
 
 body {
   background: linear-gradient(var(--bg-soft-violet), var(--bg-soft-blue));
+  display: grid;
+  place-content: center;
+  grid-template-columns: 85%;
 }
 
 #faq {
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 1.5rem;
-  position: relative;
-}
-#faq > :nth-child(1) {
-  position: absolute;
-  top: -8rem;
-  left: 4.375rem;
-  width: 17.5rem;
-}
-#faq > :nth-child(2) {
-  position: absolute;
-  top: 0.75rem;
-  left: 4.375rem;
-  width: 17.5rem;
-}
-#faq #title {
-  color: var(--text-dark-blue);
-  font-weight: var(--fw-bold);
-  font-size: 2.625rem;
-}
-#faq #questions .q_a {
-  border-bottom: 1px solid var(--dividers-light-grayish-blue);
-}
-#faq #questions .q_a .question {
-  font-size: 1rem;
-  transition: ease-in-out 0.2s;
-}
-#faq #questions .q_a img {
-  transition: ease-in-out 0.2s;
-}
-#faq #questions .q_a img:hover, #faq #questions .q_a img:focus {
-  cursor: pointer;
-}
-#faq #questions .q_a .question:hover, #faq #questions .q_a .question:focus {
-  color: var(--text-red);
-  cursor: pointer;
-}
-#faq #questions .q_a .answer {
-  transition: ease-in-out 0.2s;
-}
-
-body {
   display: grid;
-  grid-template-columns: 100%;
   place-content: center;
-  padding-inline: 2.25rem;
-}
-
-article {
-  padding: 2rem;
-}
-article .wrapper {
-  display: grid;
-  grid-template-columns: 100%;
-  place-content: center;
-  margin-top: 6.75rem;
-  margin-bottom: 1.5rem;
-}
-article header {
-  align-self: end;
-  justify-self: center;
+  grid-template-columns: 85%;
   padding-block: 1.5rem;
 }
-article section {
-  display: grid;
+#faq__imgs {
+  display: none;
 }
-article section div {
-  padding-block: 1rem;
-  display: grid;
-  row-gap: 1rem;
-  grid-template-columns: 90% 10%;
-}
-article section div img {
-  align-self: center;
-  justify-self: end;
+#faq img:nth-child(1) {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -4,4 +4,7 @@
 
 body {
     background: linear-gradient(var(--bg-soft-violet), var(--bg-soft-blue));
+    display: grid;
+    place-content: center;
+    grid-template-columns: 85%;
 }

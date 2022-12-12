@@ -11,7 +11,7 @@
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="style.css">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +21,30 @@
 
   <article id="faq">
     <div class="faq__imgs">
-      <img src="./images/illustration-box-desktop.svg" alt="box illustration" role="image">
-      <img src="./images/illustration-woman-online-mobile.svg" alt="Woman online" srcset="./images/illustration-woman-online-mobile.svg, ./images/illustration-woman-online-desktop.svg" role="image">
-      <img src="./images/bg-pattern-mobile.svg" alt="Image background patter" srcset="./images/bg-pattern-mobile.svg, ./images/bg-patter-desktop.svg" aria-disabled="true">
+      <img
+        src="./images/illustration-box-desktop.svg"
+        alt="box illustration"
+        role="image" 
+        width="191"
+        height="184">
+
+      <div class="img__wrapper">
+        <img
+          src="./images/illustration-woman-online-mobile.svg"
+          alt="Woman online"
+          srcset="./images/illustration-woman-online-mobile.svg 236w,
+                  ./images/illustration-woman-online-desktop.svg 472w"
+          sizes="(min-width: 600px) 50vw, 100vw"
+          role="image">
+        <img
+          src="./images/bg-pattern-mobile.svg"
+          alt="Image background patter"
+          srcset="./images/bg-pattern-mobile.svg 240w,
+                  ./images/bg-pattern-desktop.svg 966w"
+          sizes="(min-width: 600px) 50vw, 100vw"
+          role="image">
+      </div>
+      
     </div>
       
     <div class="wrapper">

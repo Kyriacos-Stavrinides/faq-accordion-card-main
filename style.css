@@ -27,6 +27,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: ease-in-out .1s;
 }
 
 html, body {
@@ -50,7 +51,9 @@ body {
     background-image: linear-gradient(var(--bg-violet), var(--bg-blue));
     padding-inline: var(--spacing);
     display: grid;
+    grid-template-columns: 100%;
     place-content: center;
+    line-height: 1.4;
 }
 
 article {
@@ -61,8 +64,23 @@ article {
     background-repeat: no-repeat;
     background-size: 20rem;
     background-position: top center;
-    
+    margin: auto;
+    width: 100%;
+    height: auto;
+    max-width: 77rem;
 }
+
+@media (min-width: 71em) {
+    article {
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-size: 100%;
+        background-position: bottom -10rem left -45rem;
+    }
+}
+
+/* Component styling */
+
+/* Main card images */
 
 .card img {
     max-width: 20rem;
@@ -77,14 +95,130 @@ article {
     transform: translateY(-13rem);
 }
 
+@media (min-width: 71em) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding-block: 6rem;
+        padding-right: 7rem;
+    }
+    .card img:first-child {
+        position: absolute;
+        display: block;
+        top: 36%;
+        right: 88%;
+        z-index: 2;
+    }
+
+    .card img:nth-child(2) {
+        max-width: 37.5rem;
+        transform: translate(-8rem, 0rem);
+    }
+}
+
+/* Heading and text wrapper styling */
+
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing);
+    gap: calc(1.5 * var(--spacing));
+    margin-top: calc(-4 * var(--spacing));
 }
 
 .wrapper h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: var(--fw-bold);
 }
+
+@media (min-width: 71em) {
+
+    .wrapper {
+        text-align: left;
+        flex-grow: 2;
+        flex-shrink: 1;
+        margin: 0
+    }
+
+    .wrapper h1 {
+        text-align: left;
+    }
+}
+
+/* Accordion styling */
+
+.accordion {
+    --spacing: 1rem;
+    display: flex;
+    flex-flow: column;
+    gap: calc(1.25 * var(--spacing));
+}
+
+.accordion h2 .accordion-button {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: var(--text-dkblue);
+}
+
+.accordion h2 .accordion-button:hover {
+    cursor: pointer;
+    color: var(--text-red);
+}
+
+.accordion h2 .accordion-button::after {
+    content: "";
+    display: inline-block;
+    background-image: url(./images/icon-arrow-down.svg);
+    width: var(--spacing);
+    height: var(--spacing);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: end;
+    
+}
+
+.accordion .accordion-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    border-bottom: 1px solid var(--dividers);
+    padding-bottom: calc(1.4 * var(--spacing));
+}
+
+.accordion .accordion-item .accordion-body {
+    color: var(--text-vdkblue);
+
+    
+}
+
+/* Styling applied to the hidden accordion elements */
+
+.collapsed {
+
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+
+.collapse {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.font-bold {
+    font-weight: var(--fw-bold);
+    color: var(--text-blue) !important;
+}
+

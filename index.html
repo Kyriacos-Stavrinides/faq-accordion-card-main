@@ -30,89 +30,94 @@
 
   <article class="card">
     <img src="./images/illustration-box-desktop.svg" alt="Illustration box desktop">
-    <img src="./images/illustration-woman-online-mobile.svg" alt="Illustration woman online" srcset="./images/illustration-woman-online-mobile.svg, ./images/illustration-woman-online-desktop.svg">
+    <img src="./images/illustration-woman-online-mobile.svg" alt="Illustration woman online" srcset="./images/illustration-woman-online-mobile.svg 420w, ./images/illustration-woman-online-desktop.svg 850w">
     
     <div class="wrapper">
       <h1>FAQ</h1>
-      <div class="accordion">
+      <div class="accordion" id="accordionExample">
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-controls="">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-controls="collapseOne">
               How many team members can I invite?
       
             </button>
           </h2>
-          <div class="accordion-body">
-            <p>
-              You can invite up to 2 additional users on the Free plan. There is no limit on 
-              team members for the Premium plan.
-            </p>
+          <div class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#accordionExample">
+
+            <div class="accordion-body" id="collapseOne">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There is no limit on 
+                team members for the Premium plan.
+              </p>
+          </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-controls="">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="collapseTwo">
               What is the maximum file upload size?
             </button>
           </h2>
-          <div class="accordion-body">
-            <p>
-              No more than 2GB. All files in your account must fit your allotted storage space.
-            </p>
+          <div class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#accordionExample">
+
+            <div class="accordion-body" id="collapseTwo">
+              <p>
+                No more than 2GB. All files in your account must fit your allotted storage space.
+              </p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-controls="">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="collapseThree">
               How do I reset my password?
             </button>
           </h2>
-          <div class="accordion-body">
-            <p>
-              Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you.
-            </p>
+          <div class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#accordionExample">
+
+            <div class="accordion-body" id="collapseThree">
+              <p>
+                Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.
+              </p>
+          </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-controls="">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">
               Can I cancel my subscription?
             </button>
           </h2>
-          <div class="accordion-body">
-            <p>
-              Yes! Send us a message and we'll process your request no questions asked.
-            </p>
+          <div class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#accordionExample">
+
+            <div class="accordion-body" id="collapseFour">
+              <p>
+                Yes! Send us a message and we'll process your request no questions asked.
+              </p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-controls="">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">
               Do you provide additional support?
             </button>
           </h2>
-          <div class="accordion-body">
-            <p>
-              Chat and email support is available 24/7. Phone lines are open during normal business hours.
-            </p>
+          <div class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#accordionExample">
+
+            <div class="accordion-body" id="collapseFive">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       
-
-      
-
-      
-
-      
-
-      
     </div>
     
   </article>
-  
-
   
   <script type="text/javascript" src="app.js"></script>
 </body>
